@@ -1,0 +1,421 @@
+header {
+  background: #363636;
+  height: 55px;
+}
+
+header .sign-in-button {
+  float: right;
+}
+
+.tile-wrapper {
+  width: 50%;
+  float: left;
+  position: relative;
+  max-height: 850px;
+}
+
+.main-info {
+  position: absolute;
+  height: 50%;
+  left: 0;
+  top: 0;
+}
+
+.main-info h1,
+.main-info h2,
+.main-info p {
+  color: #fff;
+}
+
+.main-info h1 {
+  font-weight: 300;
+  margin: 20px 20px 5px 20px;
+}
+
+.main-info h2 {
+  font-size: 20px;
+  margin: 0px 20px;
+}
+
+
+/* keeps the tiles sqaure with screen */
+div#dummy-square {
+  margin-top: 100%;
+}
+
+/* keeps the tiles sqaure with screen */
+section.tile-wrapper-sqaure {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.tile-wrapper .tile.small {
+  width: 50%;
+  text-align: center;
+  height: 50%;
+  color: #fff;
+  float: left;
+  opacity: 1
+  overflow: hidden;
+  position: absolute;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.tile-wrapper .tile.small:hover {
+  opacity: .5;
+}
+
+.tile-wrapper .tile.small.expand:hover {
+  opacity: 1;
+}
+
+.tile-wrapper .tile.small:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+
+.tile-wrapper .tile.small:nth-child(2) {
+  right: 0;
+  top: 0;
+}
+
+.tile-wrapper .tile.small:nth-child(3) {
+  left: 0;
+  bottom: 0;
+}
+
+.tile-wrapper .tile.small:nth-child(4) {
+  right: 0;
+  bottom: 0;
+}
+
+
+
+.tile-wrapper .tile.small div.info {
+  padding: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tile-wrapper .tile div.top-center h3 {
+  color: #fff;
+}
+
+.tile.small div.info p.quote {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.tile.small div.info span.blank {
+  background: #fff;
+  width: 100px;
+  height: 55px;
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+  top: 0;
+  box-shadow: 1px 1px 5px 0 #5c5c5c;
+  margin: 5px;
+}
+
+.tile.small div.info span.blank span.help {
+  border-color: #339999;
+  color: #339999;
+  width: 100%;
+  padding: 0;
+  border-top: 2px solid;
+  display: inline-block;
+  position: relative;
+  font-size: 13px;
+  line-height: 20px;
+  bottom: -14px;
+  text-transform: uppercase;
+}
+
+select.word-options {
+  border: none;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  font-size: 14px;
+  color: #339999;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  margin-top: 6px;
+  font-family: 'open sans', sans-serif;
+  text-indent: 5px;
+}
+
+.tile-wrapper .tile.small div.more-info {
+  display: none;
+}
+
+.tile-wrapper .tile.small div.close {
+  display: none;
+}
+
+.tile.small div.info span.blank:hover {
+  opacity: 1;
+}
+
+.tile.small .video-img img {
+  width: 100%;
+}
+
+.video-img {
+  position: relative;
+}
+
+
+
+/* EXPANDED FULL BLOCK */
+.tile-wrapper .tile.expand {
+  width: 100%;
+  height: 100% !important;
+  display: block;
+  opacity: 1;
+  overflow: hidden;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  position: absolute;
+  z-index: 1;
+}
+
+.tile-wrapper .tile.expand div.close {
+  display: block;
+  transition: transform 2s;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.tile-wrapper .tile.expand div.close:hover {
+  transform: rotate(1080deg);
+}
+
+.tile-wrapper .tile.expand div.info {
+  padding: 0;
+}
+
+.tile.expand div.info p.quote {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 68px;
+  padding: 30px;
+}
+
+.tile.expand div.info span.blank {
+  width: 200px;
+  height: 90px;
+}
+
+.tile.expand div.info span.blank span.help {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  bottom: -25px;
+}
+
+.tile.expand select.word-options {
+  font-size: 25px;
+  text-indent: 10px;
+  margin: 12px auto 0px auto;
+  left: auto;
+  width: auto;
+  font-weight: 600;
+}
+
+.tile-wrapper .tile.expand div.more-info {
+  display: block;
+  bottom: 0;
+  position: absolute;
+  text-align: initial;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+}
+
+.tile-wrapper .tile.expand div.more-info p {
+  font-size: 22px;
+}
+
+.tile-wrapper .tile div.more-info .left {
+  left: 30px;
+  bottom: 30px;
+  margin: 0;
+  position: absolute;
+  font-weight: 300;
+}
+
+.tile-wrapper .tile div.more-info .right {
+  float: right;
+  bottom: 30px;
+  right: 30px;
+  position: absolute;
+  font-weight: 300;
+}
+
+.tile-wrapper .tile div.more-info div {
+  font-size: 22px;
+}
+
+.tile.expand .video-img img {
+  width: 90%;
+}
+
+/* END: EXPAND FULL BLOCK */
+
+
+button.sign-in {
+  border: 3px solid #fff;
+  border-radius: 0;
+  background: none;
+  font-size: 22px;
+  color: #fff;
+  padding: 7px 30px;
+  font-weight: 300;
+}
+
+button.sign-in:hover {
+  background: #fff;
+  border: 3px solid transparent;
+  color: #339999;
+}
+
+
+
+
+/* PLAY BUTTON */
+
+.video-img .play-button-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: 0 auto;
+}
+
+.circle {
+  stroke: #fff;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  -webkit-transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.playBut {
+  /*  border: 1px solid red;*/
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+}
+.playBut .triangle {
+  -webkit-transition: all 0.7s ease-in-out;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  stroke: #fff;
+  transform: translateY(0);
+}
+.playBut:hover .triangle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  stroke: #fff;
+  animation: nudge 0.7s ease-in-out;
+}
+@keyframes nudge {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.playBut:hover .circle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+.tile-wrapper .tile.expand .video-img .play-button-container {
+  display: none;
+}
+
+
+
+
+/* DOS & DON'TS */
+.tips {
+  float: left;
+  width: 100%;
+  background: #E5E5E5;
+}
+
+.tips-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.tips h1 {
+  color: #001a57;
+  text-align: center;
+}
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+
+  .tile.small div.info p.quote {
+    font-size: 16px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .tile-wrapper {
+    width: 100%;
+  }
+
+
+}
+
+
+
+
+/* TABLET */
+@media only screen and (max-width: 1080px) {
+
+  .tile.small div.info p.quote {
+    font-size: 20px;
+  }
+
+
+}

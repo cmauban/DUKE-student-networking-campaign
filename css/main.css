@@ -1,0 +1,346 @@
+main.container {
+  width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  font-family: 'open sans';
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+main.container.full {
+  width: 100%;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #d75404;
+  font-weight: 400;
+  font-size: 33px;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #262626;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #6e6f71;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #001a57;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  color: #98999b;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color #666666;
+}
+
+a {
+  color: #0680cd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #001a57;
+}
+
+/* ---------- */
+
+.col-left-40 {
+  width: 40%;
+  margin-right: 5%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.col-right-55 {
+  width: 55%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  float: left;
+}
+
+/* HOMEPAGE: ALUMNI NEWS */
+
+article.alumni-news {
+  display: block;
+  margin-bottom: 58px;
+}
+
+article.alumni-news .navy-box {
+  color: #fff;
+  height: 200px;
+  display: block;
+  background: #001a57;
+}
+
+article.success .navy-box {
+  text-align: center;
+  background: #001a57;
+  color: #fff;
+}
+
+article.alumni-news .img-wrapper {
+  float: left;
+  margin-right: 10px;
+}
+
+.alumni-news .img-wrapper img {
+  height: 200px;
+  width: 150px;
+}
+
+.success img {
+  vertical-align: text-top;
+}
+
+.alumni-news .copy-wrapper,
+.success .copy-wrapper
+.cwd .copy-wrapper {
+  padding: 7px;
+}
+
+.alumni-news h3,
+.success h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.success h3 {
+  line-height: 1;
+}
+
+.success h4.name {
+  font-size: 24px;
+  margin: 0;
+  color: #adadad;
+  font-weight: 400;
+}
+
+.alumni-news p,
+.success p {
+  color: #adadad;
+  font-size: 16px;
+  margin: 5px;
+  font-weight: 300;
+}
+
+.success p {
+  margin: 0;
+}
+
+.alumni-news a.read-button,
+.success a.read-button {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 4px 12px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 12px;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.alumni-news a.read-button:hover,
+.success a.read-button:hover {
+  background: #fff;
+  color: #001a57;
+}
+
+.success .read-button-container {
+  margin-bottom: 10px;
+}
+
+.alumni-news a.read-more {
+  float: right;
+  color: #0680cd;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+
+
+/* HOMEPAGE: UPCOMING EVENTS */
+article.homepage-events {
+  margin-bottom: 30px;
+}
+
+article.homepage-events h5.event-category {
+  color: #001a57;
+  font-size: 18px;
+  margin: 0;
+}
+
+.col-left-40 article.homepage-events img {
+  margin: 5px 0;
+}
+
+article.homepage-events a {
+  text-decoration: none;
+}
+
+article.homepage-events h6.event-title {
+  margin: 0;
+  color: #0680cd;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+article.homepage-events p.event-copy {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.homepage-events p.duke-group {
+  text-transform: uppercase;
+  color: #adadad;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+}
+
+article.featured {
+  margin-top: 28px;
+}
+
+article.featured h4.featured-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+article.featured p {
+  margin: 5px 0;
+  color: #666666;
+}
+
+article.featured a.find-more {
+  border: 1px solid #0680cd;
+  border-radius: 7px;
+  background: transparent;
+  color: #0680cd;
+  padding: 4px 12px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: -webkit-baseline-middle;
+}
+
+article.featured div.featured-label {
+  text-transform: uppercase;
+  background: #a1b70d;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+}
+
+article.featured .find-more-events {
+  float: right;
+  color: #0680cd;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+
+/* CONNECT WITH DUKE SECTION */
+.col-left-55 {
+  width: 55%;
+  margin-right: 5%;
+  box-sizing: border-box;
+  float: left;
+}
+
+.col-right-40 {
+  width: 40%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  float: left;
+}
+
+section.cwd {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.cwd div.img-wrapper img.main {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.cwd div.img-wrapper img.devil {
+  position: absolute;
+  bottom: 35px;
+}
+
+.cwd div.img-wrapper h5 {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cwd div.copy-wrapper {
+  background: #d75404;
+  color: #fff;
+  padding: 10px;
+  width: 170px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.page-home h4.box-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.cwd div.copy-wrapper p {
+  font-size: 16px;
+  margin: 5px auto 5px auto;
+}
+
+.cwd div.copy-wrapper p a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+div.col-right-40 section.cwd {
+  margin-bottom: 30px;
+}
