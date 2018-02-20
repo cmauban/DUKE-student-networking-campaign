@@ -16,7 +16,8 @@ header .sign-in-button {
 
 .main-info {
   position: absolute;
-  height: 50%;
+  height: 100%; /* or back to 50%? */
+  width: 100%;
   left: 0;
   top: 0;
 }
@@ -35,6 +36,33 @@ header .sign-in-button {
 .main-info h2 {
   font-size: 20px;
   margin: 0px 20px;
+}
+
+.main-info #main-image .blue-devil {
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+}
+
+.main-info .button-container {
+  float: right;
+  margin-top: 15%;
+  margin-right: 20%;
+}
+
+.main-info .button-container button.search-now {
+  border: 3px solid #fff;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 40px;
+  font-family: 'open sans';
+  cursor: pointer;
+}
+
+.main-info .button-container button.search-now:hover {
+  color: #001a57;
+  background: #fff;
 }
 
 
@@ -109,8 +137,26 @@ section.tile-wrapper-sqaure {
   box-sizing: border-box;
 }
 
+.tile-wrapper .tile div.top-center {
+  padding: 40px 20px 20px 20px;
+}
+
 .tile-wrapper .tile div.top-center h3 {
   color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+section#checklist div.info {
+  height: auto !important;
+}
+
+section#checklist {
+  cursor: pointer;
+}
+
+div.info.centered img {
+  margin: 0px auto;
 }
 
 .tile.small div.info p.quote {
@@ -158,6 +204,7 @@ select.word-options {
   margin-top: 6px;
   font-family: 'open sans', sans-serif;
   text-indent: 5px;
+  cursor: pointer;
 }
 
 .tile-wrapper .tile.small div.more-info {

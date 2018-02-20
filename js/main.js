@@ -13,6 +13,10 @@ $(function () {
          $(this).parent().parent().parent().addClass('expand');
        })
 
+       $('.info.centered').on('click', function(){
+         $(this).parent().addClass('expand');
+       })
+
         $('.close').on('click', function(){
           $('.tile.small.expand').removeClass('expand');
         });
