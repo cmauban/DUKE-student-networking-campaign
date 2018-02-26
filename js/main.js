@@ -1,16 +1,15 @@
 /* MAD LIB SELECT ON CHANGE */
 $(function () {
-       $(".word-options").change(function () {
+       $("#madlib-green .word-options, #madlib-teal .word-options").change(function () {
            var selectedText = $(this).find("option:selected").text();
            var selectedValue = $(this).val();
-           // alert("Selected Text: " + selectedText + " Value: " + selectedValue);
            var selected = $(this);
            selected.parent().parent().parent().parent().parent().addClass('expand');
 
        });
 
        $('.play-button-container').on('click', function(){
-         $(this).parent().parent().parent().addClass('expand');
+         $(this).parent().parent().addClass('expand');
        })
 
        $('.info.centered').on('click', function(){
@@ -35,6 +34,13 @@ $(function () {
           $rootScope.items = response.data;
           console.log(response.data);
         });
-    });
 
-})();
+        $http.get('api/industry.json')
+          .then(function(response){
+            $rootScope.industitems = response.data;
+            console.log(response.data);
+          });
+
+    }); // end countController
+
+})(); // end iffy

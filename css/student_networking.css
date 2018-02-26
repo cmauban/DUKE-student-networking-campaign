@@ -137,26 +137,32 @@ section.tile-wrapper-sqaure {
   box-sizing: border-box;
 }
 
-.tile-wrapper .tile div.top-center {
-  padding: 40px 20px 20px 20px;
-}
-
 .tile-wrapper .tile div.top-center h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 400;
 }
 
-section#checklist div.info {
-  height: auto !important;
+div.box-centered {
+  margin: 0 auto;
+  width: 100%;
 }
 
-section#checklist {
-  cursor: pointer;
+div.box-centered .top-center h3 {
+  margin-top: 0;
+  margin-bottom: 15%;
 }
+
+/* section#checklist {
+  cursor: pointer;
+} */
 
 div.info.centered img {
   margin: 0px auto;
+}
+
+div.quote-container {
+  position: relative;
 }
 
 .tile.small div.info p.quote {
@@ -178,8 +184,6 @@ div.info.centered img {
 }
 
 .tile.small div.info span.blank span.help {
-  border-color: #339999;
-  color: #339999;
   width: 100%;
   padding: 0;
   border-top: 2px solid;
@@ -191,13 +195,30 @@ div.info.centered img {
   text-transform: uppercase;
 }
 
+#madlib-teal span.help {
+  border-color: #339999;
+  color: #339999;
+}
+
+#madlib-green span.help {
+  border-color: #A1B70D;
+  color: #A1B70D;
+}
+
+#madlib-green .more-info a button.sign-in:hover {
+  color: #A1B70D;
+}
+
+#madlib-teal .more-info a button.sign-in:hover {
+  color: #339999;
+}
+
 select.word-options {
   border: none;
   position: absolute;
   top: 0;
   background: #fff;
   font-size: 14px;
-  color: #339999;
   text-align: center;
   width: 100%;
   left: 0;
@@ -205,6 +226,14 @@ select.word-options {
   font-family: 'open sans', sans-serif;
   text-indent: 5px;
   cursor: pointer;
+}
+
+#madlib-teal select.word-options {
+  color: #339999;
+}
+
+#madlib-green select.word-options {
+  color: #A1B70D;
 }
 
 .tile-wrapper .tile.small div.more-info {
@@ -223,6 +252,10 @@ select.word-options {
   width: 100%;
 }
 
+.tile.small .video-img iframe.video {
+  display: none;
+}
+
 .video-img {
   position: relative;
 }
@@ -239,7 +272,7 @@ select.word-options {
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
   position: absolute;
-  z-index: 1;
+  z-index: 999 !important;
 }
 
 .tile-wrapper .tile.expand div.close {
@@ -280,10 +313,7 @@ select.word-options {
 
 .tile.expand select.word-options {
   font-size: 25px;
-  text-indent: 10px;
   margin: 12px auto 0px auto;
-  left: auto;
-  width: auto;
   font-weight: 600;
 }
 
@@ -321,8 +351,16 @@ select.word-options {
   font-size: 22px;
 }
 
-.tile.expand .video-img img {
-  width: 90%;
+.tile.expand .video-img img.display-video {
+  display: none;
+}
+
+.tile.expand div.video-img {
+  margin: 0 auto;
+}
+
+.tile.expand .video-img iframe.video {
+  display: block !important;
 }
 
 /* END: EXPAND FULL BLOCK */
@@ -332,16 +370,19 @@ button.sign-in {
   border: 3px solid #fff;
   border-radius: 0;
   background: none;
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
   padding: 7px 30px;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  margin: 3px;
 }
 
 button.sign-in:hover {
   background: #fff;
   border: 3px solid transparent;
-  color: #339999;
+  color: #363636;
+  cursor: pointer;
 }
 
 
@@ -349,7 +390,7 @@ button.sign-in:hover {
 
 /* PLAY BUTTON */
 
-.video-img .play-button-container {
+.play-button-container {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -358,6 +399,11 @@ button.sign-in:hover {
   bottom: 0;
   top: 0;
   margin: 0 auto;
+  z-index: 1;
+}
+
+svg.play-animation {
+  height: 100%;
 }
 
 .circle {
@@ -369,9 +415,9 @@ button.sign-in:hover {
 }
 
 .playBut {
-  /*  border: 1px solid red;*/
   display: inline-block;
   -webkit-transition: all 0.5s ease;
+  height: 100%;
 }
 .playBut .triangle {
   -webkit-transition: all 0.7s ease-in-out;
@@ -408,7 +454,7 @@ button.sign-in:hover {
   opacity: 1;
 }
 
-.tile-wrapper .tile.expand .video-img .play-button-container {
+.tile-wrapper .tile.expand .play-button-container {
   display: none;
 }
 
@@ -423,14 +469,130 @@ button.sign-in:hover {
 }
 
 .tips-wrapper {
-  max-width: 980px;
-  margin: 0 auto;
+ padding: 20px;
 }
 
 .tips h1 {
   color: #001a57;
   text-align: center;
 }
+
+.tips h3 {
+  color: #001a57;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+
+/* CAROUSEL */
+.image-carousel {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  height: 338px;
+  position: relative;
+  margin: 0;
+}
+
+.image-carousel .arrow {
+  cursor: pointer;
+  color: #001A57;
+  display: block;
+  width: 50px;
+  font-size: 100px;
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  line-height: 330px;
+  position: absolute;
+  z-index: 9999;
+  padding-bottom: 4px;
+  padding-top: 2px;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.image-carousel .arrow.next {
+  left: 0px;
+}
+
+.image-carousel .arrow.back {
+  right: 0px;
+}
+.image-carousel .arrow:hover {
+  color: #0680CD;
+}
+.image-carousel li:nth-child(1) > .dot {
+  margin-left: 47.6%;
+}
+.image-carousel .carousel-content {
+  height: 0;
+  overflow: hidden;
+  line-height: 22px;
+  position: absolute;
+  top: 0px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.image-carousel .carousel-content li {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.image-carousel .carousel-content div.tip-item {
+  opacity: 0;
+  padding: 0;
+  width: 100%;
+  transition: 0.2s ease-in;
+}
+.image-carousel .dot {
+  float: left;
+  cursor: pointer;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+  background: #666666;
+  position: relative;
+  margin-top: 20%;
+  border-radius: 50%;
+  z-index: 999;
+  margin-right: 8px;
+  display: block;
+}
+.image-carousel .dot:hover {
+  background: #fff;
+}
+.image-carousel .carousel-toggle {
+  display: none;
+}
+.image-carousel .carousel-toggle:checked + .dot {
+  background: #fff;
+}
+.image-carousel .carousel-toggle:checked ~ .carousel-content {
+  height: 100%;
+  width: 100%;
+}
+.image-carousel .carousel-toggle:checked ~ .carousel-content div.tip-item {
+  opacity: 1;
+}
+
+.tip-item h2 span.dont {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+.tip-item h2 span.do {
+  color: #a1b70d;
+  font-weight: 600;
+}
+
+/* END: CAROUSEL */
+
 
 
 
