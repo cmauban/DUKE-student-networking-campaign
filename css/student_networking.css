@@ -504,7 +504,7 @@ svg.play-animation {
   text-align: center;
   bottom: 0;
   top: 0;
-  line-height: 330px;
+  line-height: 200px;
   position: absolute;
   z-index: 9999;
   padding-bottom: 4px;
@@ -558,7 +558,7 @@ svg.play-animation {
   height: 12px;
   background: #666666;
   position: relative;
-  margin-top: 20%;
+  bottom: -300px;
   border-radius: 50%;
   z-index: 999;
   margin-right: 8px;
@@ -625,6 +625,11 @@ svg.play-animation {
   .tile.small div.info p.quote {
     font-size: 20px;
   }
+
+  .image-carousel .carousel-content div.tip-item {
+      width: 80%;
+      margin: 0 auto;
+    }
 
 
 }
