@@ -44,3 +44,17 @@ $(function () {
     }); // end countController
 
 })(); // end iffy
+
+// CHECK list
+
+$('.list__item').click(function() {
+  $(this).toggleClass('checked');
+  $(this).children('.list__item-icon').toggleClass('hide');
+});
+
+var printDivCSS = new String ('<link href="../css/student_networking.css" rel="stylesheet" type="text/css">')
+            function printDiv(divId) {
+                window.frames["print_frame"].document.body.innerHTML=printDivCSS + document.getElementById(divId).innerHTML;
+                window.frames["print_frame"].window.focus();
+                window.frames["print_frame"].window.print();
+            }
