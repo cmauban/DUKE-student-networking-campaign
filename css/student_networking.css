@@ -91,11 +91,15 @@ section.tile-wrapper-sqaure {
   height: 50%;
   color: #fff;
   float: left;
-  opacity: 1
+  opacity: 1;
   overflow: hidden;
   position: absolute;
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
+}
+
+.tile-wrapper .tile.small.full {
+  width: 100%;
 }
 
 .tile-wrapper .tile.small:hover {
