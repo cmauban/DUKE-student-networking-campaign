@@ -165,7 +165,10 @@
 
 
               <img class="display-video expand-hide" src="images/video_ss_overlay.png" />
+              <div class="video expand-show">
+              <h1>Need Advice?</h1>
               <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/oiyTKK979Mc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
 
             </div>
           </div>
@@ -287,22 +290,22 @@
         </section>
 
 
-        <section id="madlib-green" class="tile small" style="background: #A1B70D;">
+        <section id="madlib-navy" class="tile small" style="background: #001A57;">
           <div class="info">
             <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
             <div class="quote-container">
-              <p class="quote">I'm looking for an alum in the
+              <p class="quote">I need advice on housing in
                 <span class="blank">
-                <select class="word-options" ng-model="selectedItem" ng-options="industitem.industry for industitem in industitems">
+                <select class="word-options" ng-model="selectedItem" ng-options="cityitem.city for cityitem in cityitems">
               </select>
-                <span class="help">industry</span>
+                <span class="help">city</span>
                 </span>
-                industry.
+                .
               </p>
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums in<br/> the <strong>{{selectedItem.industry}}</strong> industry.<br>Find them on the Network!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums living in <strong>{{selectedItem.city}}.</strong> <br>Find them on the Network!</div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -335,30 +338,11 @@
           </div>
         </section>
 
-        <section id="video" class="tile small" style="background: #214B85;">
+        <section id="video" class="tile small" style="background: #a1b70d;">
           <div class="info">
             <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
-            <div class='play-button-container'>
-              <a href='#' class='playBut'>
-                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
-                <svg class="play-animation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="187px" height="187px" viewBox="0 0 213.7 213.7"
-                  enable-background="new 0 0 213.7 213.7" xml:space="preserve">
-
-            <polygon class='triangle' id="XMLID_18_" fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                73.5,62.5 148.5,105.8 73.5,149.1 "/>
-
-            <circle class='circle' id="XMLID_17_" fill="none"  stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="106.8" cy="106.8" r="103.3"/>
-            </svg>
-
-              </a>
-            </div>
-            <div class="video-img">
 
 
-              <img class="display-video" src="images/video_ss_overlay.png" />
-              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/oiyTKK979Mc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-            </div>
           </div>
         </section>
 
@@ -366,7 +350,7 @@
     </section>
 
 
-    <section class="tile-wrapper" style="background: #001A57;">
+    <section class="tile-wrapper" style="background: #214B85;">
       <div id="dummy-square"></div>
       <section class="tile-wrapper-square">
         <div class="main-info">

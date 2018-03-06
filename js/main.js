@@ -1,6 +1,6 @@
 /* MAD LIB SELECT ON CHANGE */
 $(function () {
-       $("#madlib-green .word-options, #madlib-teal .word-options").change(function () {
+       $("#madlib-green .word-options, #madlib-teal .word-options, #madlib-navy .word-options").change(function () {
            var selectedText = $(this).find("option:selected").text();
            var selectedValue = $(this).val();
            var selected = $(this);
@@ -40,6 +40,12 @@ $(function () {
             $rootScope.industitems = response.data;
             console.log(response.data);
           });
+
+      $http.get('api/city.json')
+        .then(function(response){
+          $rootScope.cityitems = response.data;
+          console.log(response.data);
+        });
 
     }); // end countController
 

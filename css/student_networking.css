@@ -24,7 +24,8 @@ header .sign-in-button {
 
 .main-info h1,
 .main-info h2,
-.main-info p {
+.main-info p,
+div.video-img h1 {
   color: #fff;
 }
 
@@ -65,6 +66,10 @@ header .sign-in-button {
   background: #fff;
 }
 
+div.video-img h1 {
+  font-weight: 300;
+
+}
 
 /* keeps the tiles sqaure with screen */
 div#dummy-square {
@@ -310,12 +315,21 @@ div.quote-container {
   color: #A1B70D;
 }
 
+#madlib-navy span.help {
+  border-color: #001A57;
+  color: #001A57;
+}
+
 #madlib-green .more-info a button.sign-in:hover {
   color: #A1B70D;
 }
 
 #madlib-teal .more-info a button.sign-in:hover {
   color: #339999;
+}
+
+#madlib-navy .more-info a button.sign-in:hover {
+  color: #001A57;
 }
 
 select.word-options {
@@ -341,6 +355,10 @@ select.word-options {
   color: #A1B70D;
 }
 
+#madlib-navy select.word-options {
+  color: #001A57;
+}
+
 .tile-wrapper .tile.small div.more-info {
   display: none;
 }
@@ -357,7 +375,7 @@ select.word-options {
   width: 100%;
 }
 
-.tile.small .video-img iframe.video,
+.tile.small .expand-show,
 .tile.small div.checklist-container {
   display: none;
 }
@@ -465,7 +483,7 @@ select.word-options {
   margin: 0 auto;
 }
 
-.tile.expand .video-img iframe.video,
+.tile.expand .expand-show,
 .tile.expand div.checklist-container {
   display: block !important;
 }
