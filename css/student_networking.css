@@ -98,6 +98,13 @@ section.tile-wrapper-sqaure {
   transition: all .8s ease;
 }
 
+#big-square.tile {
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  opacity: 1;
+}
+
+
 .tile-wrapper .tile.small.full {
   width: 100%;
 }
@@ -132,7 +139,8 @@ section.tile-wrapper-sqaure {
 
 
 
-.tile-wrapper .tile.small div.info {
+.tile-wrapper .tile.small div.info,
+.tile-wrapper #big-square .main-info {
   padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -279,13 +287,19 @@ div.quote-container {
   position: relative;
 }
 
+#big-square div.quote-container {
+  width: 100%;
+  text-align: center;
+}
+
 .tile.small div.info p.quote {
   font-size: 24px;
   font-weight: 500;
   line-height: 2;
 }
 
-.tile.small div.info span.blank {
+.tile.small div.info span.blank,
+#big-square span.blank {
   background: #fff;
   width: 100px;
   height: 55px;
@@ -297,7 +311,14 @@ div.quote-container {
   margin: 5px;
 }
 
-.tile.small div.info span.blank span.help {
+#big-square span.blank {
+  width: 200px;
+  height: 75px;
+}
+
+
+.tile.small div.info span.blank span.help,
+#big-square span.blank span.help {
   width: 100%;
   padding: 0;
   border-top: 2px solid;
@@ -324,6 +345,11 @@ div.quote-container {
   color: #001A57;
 }
 
+#big-square span.help {
+  border-color: #214B85;
+  color: #214B85;
+}
+
 #madlib-green .more-info a button.sign-in:hover {
   color: #A1B70D;
 }
@@ -334,6 +360,10 @@ div.quote-container {
 
 #madlib-navy .more-info a button.sign-in:hover {
   color: #001A57;
+}
+
+#big-square .more-info a button.sign-in:hover {
+  color: #214B85;
 }
 
 select.word-options {
@@ -363,11 +393,17 @@ select.word-options {
   color: #001A57;
 }
 
-.tile-wrapper .tile.small div.more-info {
+#big-square select.word-options {
+  color: #214B85;
+}
+
+.tile-wrapper .tile.small div.more-info,
+.tile-wrapper #big-square div.more-info {
   display: none;
 }
 
-.tile-wrapper .tile.small div.close {
+.tile-wrapper .tile.small div.close,
+.tile-wrapper #big-square div.close {
   display: none;
 }
 
@@ -403,8 +439,13 @@ select.word-options {
   z-index: 999 !important;
 }
 
-.tile-wrapper .tile.expand div.close {
-  display: block;
+#big-square.tile.expand {
+  position: initial;
+}
+
+.tile-wrapper .tile.expand div.close,
+.tile-wrapper #big-square.tile.expand div.close {
+  display: block !important;
   transition: transform 2s;
   position: absolute;
   right: 30px;
@@ -420,7 +461,8 @@ select.word-options {
   padding: 0;
 }
 
-.tile.expand div.info p.quote {
+.tile.expand div.info p.quote,
+#big-square p.quote {
   font-size: 40px;
   font-weight: 600;
   line-height: 68px;
@@ -446,13 +488,14 @@ select.word-options {
 }
 
 .tile-wrapper .tile.expand div.more-info {
-  display: block;
+  display: block !important;
   bottom: 0;
   position: absolute;
   text-align: initial;
   box-sizing: border-box;
   width: 100%;
   padding: 30px;
+  color: #fff;
 }
 
 .tile-wrapper .tile.expand div.more-info p {

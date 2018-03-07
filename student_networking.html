@@ -124,18 +124,17 @@
           <div class="info">
             <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
             <div class="quote-container">
-              <p class="quote">I would love to connect with an alum currently working at
+              <p class="quote">What's the culture like at
                 <span class="blank">
                 <select class="word-options" ng-model="selectedItem" ng-options="item.company for item in items">
               </select>
                 <span class="help">company</span>
-                </span>
-                .
+              </span> ?
               </p>
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently<br/>working at <strong>{{selectedItem.company}}</strong>.<br>Find them on the Network!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently<br/>working at <strong>{{selectedItem.company}}</strong>.<br>Find them on the Network and ask!</div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -329,12 +328,56 @@
         <section id="checklist" class="tile small full" style="background: #B5B5B5;">
           <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
           <div class="info centered">
-            <div class="box-centered">
+            <div class="box-centered expand-hide">
               <div class="top-center">
-                <h3>Tips to getting your first job</h3>
+                <h3>Checklist for getting your first job</h3>
               </div>
               <img src="images/checklist-image.png" />
             </div>
+
+            <div id="div3" class="checklist-container">
+              <h3>Checklist for getting your first job</h3>
+              <ul class="list">
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Do Your Homework:</strong> Research the companies you have your eye on and find out everything you can about their history, mission, products and work culture.</span>
+                </li>
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Identify Duke alumni who work where you want to work:</strong> Use alumni.duke.edu to search for alumni by company.</span>
+                </li>
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Prepare your questions:</strong> Write down a handful of questions related to your research that you can ask alumni insiders.</span>
+                </li>
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Reach out:</strong> Contact alumni who work at your top companies via the messaging tool at <a href="https://alumni.duke.edu/" target="_blank">alumni.duke.edu</a>. In the message, introduce yourself briefly (noting that you are a Duke student) and ask if the alum would have time to answer a few of your questions about working at the company.</span>
+                </li>
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Learn from alumni:</strong> Don't ask for a job immediately. Instead, try to learn all you can from alumni. Ask about their journey from Duke to the company where they work now. You're trying to build a relationship first. Sometimes the alum you are talking with isn't in a position to help get you hired--but maybe that person can connect you with someone at his or her company that is.</span>
+                </li>
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Send a message of thanks:</strong> Thank the alum for taking time to chat with you and indicate you are interested in learning about jobs as they become available.</span>
+                </li>
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Follow up and don't give up:</strong> Keep up the relationship with alumni who have been helpful to you. Sometimes timing is everything. If you're not making progress immediately, don't give up. Expand your search, let alumni be your guides at other companies and see what happens. The job search takes both patience and determination.</span>
+                </li>
+              </ul>
+              <a class="general-button" href="javascript:printDiv('div3')">Print this checklist</a>
+            </div> <!-- END CHECKLIST -->
+<iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+
           </div>
         </section>
 
@@ -346,14 +389,28 @@
     <section class="tile-wrapper" style="background: #214B85;">
       <div id="dummy-square"></div>
       <section class="tile-wrapper-square">
+        <section id="big-square" class="tile">
         <div class="main-info">
-          <h1>Connect with Alumni</h1>
-          <h2>Find a Blue Devil who can help you take your next step.</h2>
-          <div id="main-image">
-            <img class="blue-devil" src="" />
-          </div>
+            <div class="quote-container">
+              <p class="quote">What's the culture like<br/>at
+                <span class="blank">
+                <select class="word-options" ng-model="selectedItem" ng-options="item.company for item in items">
+              </select>
+                <span class="help">company</span>
+              </span> ?
+              </p>
+            </div>
+            <div class="more-info">
+              <div class="left clearfix">
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently<br/>working at <strong>{{selectedItem.company}}</strong>.<br>Find them on the Network and ask!</div>
+              </div>
+              <div class="right clearfix">
+                <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
+              </div>
+            </div>
 
         </div>
+      </section>
       </section>
     </section>
 

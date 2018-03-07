@@ -1,6 +1,6 @@
 /* MAD LIB SELECT ON CHANGE */
 $(function () {
-       $("#madlib-green .word-options, #madlib-teal .word-options, #madlib-navy .word-options").change(function () {
+       $("#madlib-green .word-options, #madlib-teal .word-options, #madlib-navy .word-options, #big-square .word-options").change(function () {
            var selectedText = $(this).find("option:selected").text();
            var selectedValue = $(this).val();
            var selected = $(this);
@@ -17,7 +17,7 @@ $(function () {
        })
 
         $('.close').on('click', function(){
-          $('.tile.small.expand').removeClass('expand');
+          $('.tile.expand').removeClass('expand');
         });
 
 
