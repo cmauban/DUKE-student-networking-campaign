@@ -303,25 +303,8 @@
 
         <section id="madlib-teal" class="tile small" style="background: #339999;">
           <div class="info">
-            <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
-            <div class="quote-container">
-              <p class="quote">I would love to connect with an alum currently working at
-                <span class="blank">
-                <select class="word-options" ng-model="selectedItem" ng-options="item.company for item in items">
-              </select>
-                <span class="help">company</span>
-                </span>
-                .
-              </p>
-            </div>
-            <div class="more-info">
-              <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently<br/>working at <strong>{{selectedItem.company}}</strong>.<br>Find them on the Network!</div>
-              </div>
-              <div class="right clearfix">
-                <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
-              </div>
-            </div>
+
+
           </div>
         </section>
 
@@ -386,11 +369,11 @@
     </section>
 
 
-    <section class="tile-wrapper" style="background: #214B85;">
+    <section id="big-square-container" class="tile-wrapper">
       <div id="dummy-square"></div>
       <section class="tile-wrapper-square">
         <section id="big-square" class="tile">
-        <div class="main-info">
+        <div class="main-info" style="background: #214B85;">
             <div class="quote-container">
               <p class="quote">What's the culture like<br/>at
                 <span class="blank">

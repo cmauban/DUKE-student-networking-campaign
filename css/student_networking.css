@@ -98,10 +98,9 @@ section.tile-wrapper-sqaure {
   transition: all .8s ease;
 }
 
-#big-square.tile {
+#big-square .main-info:hover {
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
-  opacity: 1;
 }
 
 
@@ -109,11 +108,13 @@ section.tile-wrapper-sqaure {
   width: 100%;
 }
 
-.tile-wrapper .tile.small:hover {
+.tile-wrapper .tile.small:hover,
+#big-square .main-info:hover {
   opacity: .5;
 }
 
-.tile-wrapper .tile.small.expand:hover {
+.tile-wrapper .tile.small.expand:hover,
+#big-square.expand .main-info:hover {
   opacity: 1;
 }
 
@@ -379,6 +380,10 @@ select.word-options {
   font-family: 'open sans', sans-serif;
   text-indent: 5px;
   cursor: pointer;
+}
+
+#big-square select.word-options {
+  font-size: 22px;
 }
 
 #madlib-teal select.word-options {
