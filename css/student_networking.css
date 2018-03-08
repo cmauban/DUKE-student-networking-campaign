@@ -168,7 +168,7 @@ div.box-centered {
 
 div.box-centered .top-center h3 {
   margin-top: 0;
-  margin-bottom: 15%;
+  margin-bottom: 8%;
 }
 
 #chapel img {
@@ -176,6 +176,10 @@ div.box-centered .top-center h3 {
 }
 
 /* CHECKLIST */
+#checklist {
+  cursor: pointer;
+}
+
 .checklist-container {
   width: 100%;
   padding: 20px;
@@ -437,6 +441,7 @@ select.word-options {
 
 .video-img {
   position: relative;
+  margin: 0 auto;
 }
 
 
@@ -790,7 +795,7 @@ div.gif-container.wide-gif img {
 }
 
 .tip-item h2 span.do {
-  color: #a1b70d;
+  /* color: #a1b70d; */
   font-weight: 600;
 }
 
@@ -823,10 +828,10 @@ div.gif-container.wide-gif img {
 
 
 /* TABLET */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1366px) {
 
   .tile.small div.info p.quote {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .image-carousel .carousel-content div.tip-item {
@@ -835,16 +840,33 @@ div.gif-container.wide-gif img {
     }
 
     .checklist-container h3 {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     .list__item,
     a.general-button {
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .checklist-container .list {
       padding: 10px;
+    }
+
+    .tips h2 {
+      font-size: 25px;
+    }
+
+    .image-carousel,
+    div.gif-container img {
+      height: 400px;
+    }
+
+    .image-carousel .dot {
+      top: 360px;
+    }
+
+    div.gif-container.wide-gif img {
+      height: 300px;
     }
 
 
