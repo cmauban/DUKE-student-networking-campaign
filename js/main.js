@@ -47,6 +47,12 @@ $(function () {
           console.log(response.data);
         });
 
+        $http.get('api/major.json')
+          .then(function(response){
+            $rootScope.majoritems = response.data;
+            console.log(response.data);
+          });
+
     }); // end countController
 
 })(); // end iffy
