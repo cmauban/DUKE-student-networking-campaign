@@ -2,7 +2,7 @@ main.container {
   width: 980px;
   margin: 0 auto;
   background: #fff;
-  font-family: 'open sans';
+  font-family: 'Open Sans', sans-serif;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
    box-sizing: border-box;

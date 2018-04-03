@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Student Networking landing page</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/student_networking.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Duke Students</title>
+  <link rel="stylesheet" href="src/css/main.css">
+  <link rel="stylesheet" href="src/css/student_networking.css" type="text/css">
   <link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800|Roboto+Slab:300,400,700" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +27,7 @@
           <h1>Connect with Alumni</h1>
           <h2>Find a Blue Devil who can help you take your next step.</h2>
           <div id="main-image">
-            <img class="blue-devil" src="images/BlueDevil-Cutout.png" />
+            <img class="blue-devil" src="src/images/BlueDevil-Cutout.png" />
           </div>
           <div class="button-container">
             <a href="https://alumni.duke.edu/discover/people" class="clearfix"><button class="search-now">Begin your<br>search now</button></a>
@@ -40,7 +42,7 @@
       <section class="tile-wrapper-square">
 
         <section id="chapel" class="tile small" style="background: #B5B5B5;">
-        <img src="images/Chapel.png"/>
+        <img src="src/images/Chapel.png"/>
         </section>
 
 
@@ -59,7 +61,7 @@
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums in<br/> the <strong>{{selectedItem.industry}}</strong> industry.<br>Find them on the Network!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums in the <strong>{{selectedItem.industry}}</strong> industry. Find them on the Network!</div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -72,17 +74,17 @@
           <div class="info">
             <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
             <div class="quote-container">
-              <p class="quote">What kind of job can I get with a(n)
+              <p class="quote">What can I do with a(n)
                 <span class="blank">
                 <select class="word-options" ng-model="selectedItem" ng-options="majoritem.major for majoritem in majoritems">
               </select>
-                <span class="help">major</span>
-              </span> major?
+                <span class="help">program/major</span>
+              </span> degree?
               </p>
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums<br/>who majored in <strong>{{selectedItem.major}}</strong>.<br>Find them on the Network and ask!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums who majored in <strong>{{selectedItem.major}}</strong>. Find them on the Network and ask!</div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -91,11 +93,11 @@
           </div>
         </section>
 
-        <section id="video" class="tile small" style="background: #214B85;">
+        <section class="tile small" style="background: #214B85;">
           <div class="info">
             <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
             <div class='play-button-container'>
-              <a href='#video' class='playBut'>
+              <a href='#' class='playBut'>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
                 <svg class="play-animation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="187px" height="187px" viewBox="0 0 213.7 213.7"
                   enable-background="new 0 0 213.7 213.7" xml:space="preserve">
@@ -108,12 +110,11 @@
 
               </a>
             </div>
+
             <div class="video-img">
-
-
-              <img class="display-video expand-hide" src="images/video_ss_overlay.png" />
-              <div class="video expand-show">
               <h1>Need Advice?</h1>
+              <img class="display-video expand-hide" src="src/images/video_ss_overlay.png" />
+              <div class="video expand-show">
               <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/oiyTKK979Mc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
 
@@ -136,7 +137,7 @@
               <li>
                 <div class="tip-item clearfix">
                   <div class="gif-container">
-                    <img src='images/shane.gif'/>
+                    <img src='src/images/shane.gif'/>
                   </div>
                   <div class="copy">
                   <h3>Tip #1</h3>
@@ -157,7 +158,7 @@
               <li>
                 <div class="tip-item clearfix">
                   <div class="gif-container wide-gif">
-                    <img src='images/image001.gif'/>
+                    <img src='src/images/image001.gif'/>
                   </div>
                   <div class="copy">
                   <h3>Tip #2</h3>
@@ -179,7 +180,7 @@
               <li>
                 <div class="tip-item clearfix">
                   <div class="gif-container">
-                    <img src='images/3_slow.gif'/>
+                    <img src='src/images/3_slow.gif'/>
                   </div>
                   <div class="copy">
                   <h3>Tip #3</h3>
@@ -200,7 +201,7 @@
               <li>
               <div class="tip-item clearfix">
                 <div class="gif-container">
-                  <img src='images/dave_slow.gif'/>
+                  <img src='src/images/dave_slow.gif'/>
                 </div>
                 <div class="copy">
                 <h3>Tip #4</h3>
@@ -240,7 +241,7 @@
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums living in <strong>{{selectedItem.city}}.</strong> <br>Find them on the Network!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums living in <strong>{{selectedItem.city}}.</strong> Find them on the Network!</div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -267,11 +268,11 @@
               </a>
             </div>
             <div class="video-img">
-
-
-              <img class="display-video expand-hide" src="images/network_game_video.png" />
-              <div class="video expand-show">
               <h1>How to Network</h1>
+
+              <img class="display-video expand-hide" src="src/images/network_game_video.png" />
+              <div class="video expand-show">
+
               <iframe width="560" height="315" src="https://www.youtube.com/embed/necIBaoB1is?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
 
@@ -286,7 +287,7 @@
               <div class="top-center">
                 <h3>Checklist for getting your first job</h3>
               </div>
-              <img src="images/checklist-image.png" />
+              <img src="src/images/checklist-image.png" />
             </div>
 
             <div id="div3" class="checklist-container">
@@ -328,9 +329,9 @@
                   <span class="list__item-text"><strong>Follow up and don't give up:</strong> Keep up the relationship with alumni who have been helpful to you. Sometimes timing is everything. If you're not making progress immediately, don't give up. Expand your search, let alumni be your guides at other companies and see what happens. The job search takes both patience and determination.</span>
                 </li>
               </ul>
-              <a class="general-button" href="javascript:printDiv('div3')">Print this checklist</a>
+          <a class="general-button" href="https://alumni.duke.edu/sites/default/files/public/Student-Networking-Checklist.pdf" target="_blank">Print this checklist</a>
             </div> <!-- END CHECKLIST -->
-<iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+
 
           </div>
         </section>
@@ -356,7 +357,7 @@
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently<br/>working at <strong>{{selectedItem.company}}</strong>.<br>Find them on the Network and ask!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently working at <strong>{{selectedItem.company}}</strong>. Find them on the Network and ask!</div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -375,7 +376,7 @@
   </main>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="/node_modules/angular/angular.js"></script>
-  <script src="js/main.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 
 </html>
