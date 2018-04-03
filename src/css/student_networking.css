@@ -829,8 +829,13 @@ div.gif-container.wide-gif img {
     width: 100%;
   }
 
+  .main-info .button-container {
+    margin-top: 75px !important;
+  }
+
 }
 
+/* IPAD PRO */
 @media only screen and (max-width: 1024px) {
 
   .tile.small div.info p.quote {
