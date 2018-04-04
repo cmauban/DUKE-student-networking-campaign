@@ -1,97 +1,7 @@
 [
   {
-    "city": "Durham",
-    "count": "8313"
-  },
-
-{
-    "city": "New York",
-    "count": "4957"
-  },
-
-{
-    "city": "Brooklyn",
-    "count": "1107"
-  },
-
-{
-    "city": "Raleigh",
-    "count": "3269"
-  },
-
-{
-    "city": "Washington",
-    "count": "2796"
-  },
-
-{
     "city": "Atlanta",
     "count": "2512"
-  },
-
-{
-    "city": "Charlotte",
-    "count": "2390"
-  },
-
-{
-    "city": "San Francisco",
-    "count": "2005"
-  },
-
-{
-    "city": "Los Angeles",
-    "count": "1008"
-  },
-
-{
-    "city": "San Diego",
-    "count": "624"
-  },
-
-{
-    "city": "Chapel Hill",
-    "count": "1947"
-  },
-
-{
-    "city": "Cary",
-    "count": "1312"
-  },
-
-{
-    "city": "Greensboro",
-    "count": "941"
-  },
-
-{
-    "city": "Winston Salem",
-    "count": "599"
-  },
-
-{
-    "city": "Greenville",
-    "count": "588"
-  },
-
-{
-    "city": "Chicago",
-    "count": "1400"
-  },
-
-{
-    "city": "Arlington",
-    "count": "1293"
-  },
-
-{
-    "city": "Houston",
-    "count": "1288"
-  },
-
-{
-    "city": "Dallas",
-    "count": "1104"
   },
 
 {
@@ -100,153 +10,29 @@
   },
 
 {
-    "city": "San Antonio",
-    "count": "363"
-  },
-
-{
-    "city": "Seattle",
-    "count": "1188"
-  },
-
-{
-    "city": "Miami",
-    "count": "622"
-  },
-
-{
-    "city": "Orlando",
-    "count": "335"
-  },
-
-{
-    "city": "Columbia",
-    "count": "21"
-  },
-
-{
-    "city": "Nashville",
-    "count": "617"
-  },
-
-{
-    "city": "Pittsburgh",
-    "count": "544"
-  },
-
- {
-    "city": "Philadelphia",
-    "count": "774"
-  },
-
-{
-    "city": "Alexandria",
-    "count": "749"
-  },
-
-{
-    "city": "Wilmington",
-    "count": "683"
-  },
-
-{
-    "city": "Bethesda",
-    "count": "672"
-  },
-
-{
-    "city": "Richmond",
-    "count": "642"
-  },
-
-{
-    "city": "Boston",
-    "count": "650"
-  },
-
-{
-    "city": "Cambridge",
-    "count": "347"
-  },
-
-{
-    "city": "Louisville",
-    "count": "338"
-  },
-
-{
     "city": "Baltimore",
     "count": "645"
   },
 
 {
-    "city": "Denver",
-    "count": "733"
+    "city": "Bangalore",
+    "count": "24"
   },
 
 {
-    "city": "Hillsborough",
-    "count": "493"
+    "city": "Beijing",
+    "count": "205"
   },
 
 {
-    "city": "Asheville",
-    "count": "487"
+    "city": "Berlin",
+    "count": "38"
   },
 
-{
-    "city": "Jacksonville",
-    "count": "417"
-  },
 
 {
-    "city": "Cincinnati",
-    "count": "463"
-  },
-
-{
-    "city": "Columbus",
-    "count": "416"
-  },
-
-{
-    "city": "Tampa",
-    "count": "450"
-  },
-
-{
-    "city": "Saint Louis",
-    "count": "445"
-  },
-
-{
-    "city": "Charlottesville",
-    "count": "1312"
-  },
-
-{
-    "city": "Charleston",
-    "count": "395"
-  },
-
-{
-    "city": "Madison",
-    "count": "387"
-  },
-
-{
-    "city": "Birmingham",
-    "count": "334"
-  },
-
-{
-    "city": "Ann Arbor",
-    "count": "299"
-  },
-
-{
-    "city": "Phoenix",
-    "count": "279"
+    "city": "Boston",
+    "count": "650"
   },
 
 {
@@ -255,28 +41,71 @@
   },
 
 {
-    "city": "New Orleans",
-    "count": "275"
+    "city": "Cairo",
+    "count": "10"
+  },
+
+
+{
+    "city": "Chapel Hill",
+    "count": "1947"
   },
 
 {
-    "city": "Palo Alto",
-    "count": "256"
+    "city": "Charleston",
+    "count": "395"
   },
 
 {
-    "city": "Los Altos",
-    "count": "166"
+    "city": "Charlotte",
+    "count": "2390"
   },
 
 {
-    "city": "Pasadena",
-    "count": "166"
+    "city": "Charlottesville",
+    "count": "1312"
   },
 
 {
-    "city": "San Jose",
-    "count": "385"
+    "city": "Cincinnati",
+    "count": "463"
+  },
+
+{
+    "city": "Chicago",
+    "count": "1400"
+  },
+
+{
+    "city": "Dallas",
+    "count": "1104"
+  },
+
+{
+    "city": "Denver",
+    "count": "733"
+  },
+
+{
+    "city": "Durham",
+    "count": "8313"
+  },
+
+
+{
+    "city": "Greensboro",
+    "count": "941"
+  },
+
+{
+    "city": "Hong Kong",
+    "count": "6"
+  },
+
+
+{
+    "city": "Houston",
+    "count": "1288"
   },
 
 {
@@ -285,28 +114,8 @@
   },
 
 {
-    "city": "Princeton",
-    "count": "224"
-  },
-
-{
-    "city": "Greenwich",
-    "count": "206"
-  },
-
-{
-    "city": "Memphis",
-    "count": "220"
-  },
-
-{
-    "city": "Salt Lake City",
-    "count": "199"
-  },
-
-{
-    "city": "Seoul",
-    "count": "459"
+    "city": "Jacksonville",
+    "count": "417"
   },
 
 {
@@ -315,12 +124,149 @@
   },
 
 {
+    "city": "Los Angeles",
+    "count": "1008"
+  },
+
+{
+    "city": "Louisville",
+    "count": "338"
+  },
+
+{
+    "city": "Madison",
+    "count": "387"
+  },
+
+{
+    "city": "Memphis",
+    "count": "220"
+  },
+{
+    "city": "Miami",
+    "count": "622"
+  },
+
+{
+    "city": "Mumbai",
+    "count": "74"
+  },
+
+
+{
+    "city": "Nashville",
+    "count": "617"
+  },
+
+{
+    "city": "New Delhi",
+    "count": "44"
+  },
+
+
+{
+    "city": "New Orleans",
+    "count": "275"
+  },
+
+{
+    "city": "New York",
+    "count": "4957"
+  },
+
+{
+    "city": "Orlando",
+    "count": "335"
+  },
+
+{
+    "city": "Paris",
+    "count": "67"
+  },
+
+{
+    "city": "Philadelphia",
+    "count": "774"
+  },
+
+{
+    "city": "Phoenix",
+    "count": "279"
+  },
+
+{
+    "city": "Pittsburgh",
+    "count": "544"
+  },
+
+{
+    "city": "Raleigh",
+    "count": "3269"
+  },
+
+{
+    "city": "Richmond",
+    "count": "642"
+  },
+
+{
+    "city": "Saint Louis",
+    "count": "445"
+  },
+
+{
+    "city": "San Antonio",
+    "count": "363"
+  },
+
+{
+    "city": "San Diego",
+    "count": "624"
+  },
+
+{
+    "city": "San Francisco",
+    "count": "2005"
+  },
+
+{
+    "city": "Salt Lake City",
+    "count": "199"
+  },
+
+{
+    "city": "Seattle",
+    "count": "1188"
+  },
+
+{
+    "city": "Seoul",
+    "count": "459"
+  },
+
+{
+    "city": "Singapore",
+    "count": "125"
+  },
+
+{
+    "city": "Tampa",
+    "count": "450"
+  },
+
+{
     "city": "Tokyo",
     "count": "169"
   },
 
 {
-    "city": "Beijing",
-    "count": "205"
+    "city": "Washington, D.C.",
+    "count": "2796"
+  },
+
+{
+    "city": "Winston-Salem",
+    "count": "599"
   }
+
 ]

@@ -1,48 +1,7 @@
 [
-  {
-    "company": "Duke University",
-    "count": "1665"
-  },
-
 {
-    "company": "Duke Health",
-    "count": "1497"
-  },
-
-{
-    "company": "Self Employed",
-    "count": "1088"
-  },
-
-{
-    "company": "Private Practice",
-    "count": "621"
-  },
-
-{
-    "company": "IBM Corporation",
-    "count": "666"
-  },
-
-
-{
-    "company": "UMC",
-    "count": "440"
-  },
-
-{
-    "company": "Deloitte",
-    "count": "409"
-  },
-
-{
-    "company": "Google Inc",
-    "count": "319"
-  },
-
-{
-    "company": "Microsoft Corporation",
-    "count": "314"
+    "company": "Accenture",
+    "count": "286"
   },
 
 {
@@ -51,213 +10,8 @@
   },
 
 {
-    "company": "McKinsey & Company",
-    "count": "234"
-  },
-
-{
-    "company": "US Navy",
-    "count": "226"
-  },
-
-{
-    "company": "UNC-Chapel Hill",
-    "count": "225"
-  },
-
-{
-    "company": "Attorney at Law",
-    "count": "208"
-  },
-
-{
-    "company": "Duke Hospital",
-    "count": "207"
-  },
-
-{
-    "company": "Goldman Sachs & Company",
-    "count": "197"
-  },
-
-{
-    "company": "Accenture PLC",
-    "count": "195"
-  },
-
-{
-    "company": "Medical Practice",
-    "count": "187"
-  },
-
-{
-    "company": "Bank of America",
-    "count": "293"
-  },
-
-{
-    "company": "US Army",
-    "count": "173"
-  },
-
-{
-    "company": "JPMorgan Chase & Co",
-    "count": "160"
-  },
-
-{
-    "company": "Cisco Systems, Inc",
-    "count": "148"
-  },
-
-{
-    "company": "Morgan Stanley & Co., Inc",
-    "count": "213"
-  },
-
-{
-    "company": "Wells Fargo & Company",
-    "count": "215"
-  },
-
-{
-    "company": "Apple Inc",
+    "company": "Apple",
     "count": "139"
-  },
-
-{
-    "company": "Capital One Inc",
-    "count": "135"
-  },
-
-{
-    "company": "University of Michigan",
-    "count": "111"
-  },
-
-{
-    "company": "Bain & Company",
-    "count": "109"
-  },
-
-{
-    "company": "University of Washington",
-    "count": "109"
-  },
-
-{
-    "company": "Deutsche Bank",
-    "count": "107"
-  },
-
-{
-    "company": "Citigroup Inc",
-    "count": "105"
-  },
-
-{
-    "company": "University of Pennsylvania",
-    "count": "105"
-  },
-
-{
-    "company": "GlaxoSmithKline",
-    "count": "104"
-  },
-
-{
-    "company": "Intel Corporation",
-    "count": "101"
-  },
-
-{
-    "company": "PricewaterhouseCoopers International",
-    "count": "101"
-  },
-
-{
-    "company": "Kaiser Permanente",
-    "count": "134"
-  },
-
-{
-    "company": "Emory University",
-    "count": "133"
-  },
-
-{
-    "company": "Johnson & Johnson",
-    "count": "129"
-  },
-
-{
-    "company": "General Electric Company",
-    "count": "128"
-  },
-
-{
-    "company": "Stanford University",
-    "count": "125"
-  },
-
-{
-    "company": "Boston Consulting Group, Inc.",
-    "count": "123"
-  },
-
-{
-    "company": "United Methodist Church",
-    "count": "123"
-  },
-
-{
-    "company": "US Air Force",
-    "count": "120"
-  },
-
-{
-    "company": "Oracle Corporation",
-    "count": "112"
-  },
-
-{
-    "company": "Harvard University",
-    "count": "87"
-  },
-
-{
-    "company": "Simpson Thacher & Bartlett LLP",
-    "count": "83"
-  },
-
-{
-    "company": "US Department of State",
-    "count": "83"
-  },
-
-{
-    "company": "US EPA",
-    "count": "81"
-  },
-
-{
-    "company": "Hewlett-Packard Company",
-    "count": "79"
-  },
-
-{
-    "company": "Lockheed Martin Corporation",
-    "count": "79"
-  },
-
-{
-    "company": "Johns Hopkins Hospital",
-    "count": "77"
-  },
-
-{
-    "company": "Massachusetts General Hospital",
-    "count": "77"
   },
 
 {
@@ -266,59 +20,18 @@
   },
 
 {
-    "company": "North Carolina State University",
-    "count": "98"
+    "company": "Bain & Company",
+    "count": "109"
   },
 
 {
-    "company": "Jones Day",
-    "count": "95"
+    "company": "Bank of America",
+    "count": "293"
   },
 
 {
-    "company": "Pfizer Inc",
-    "count": "95"
-  },
-
-{
-    "company": "Johns Hopkins University",
-    "count": "93"
-  },
-
-{
-    "company": "Accenture",
-    "count": "91"
-  },
-
-{
-    "company": "Vanderbilt University",
-    "count": "91"
-  },
-
-{
-    "company": "Latham & Watkins",
-    "count": "90"
-  },
-{
-    "company": "University of Virginia",
-    "count": "88"
-  },
-
-{
-    "company": "Eli Lilly & Company",
-    "count": "75"
-  },
-
-
-{
-    "company": "US Department of Justice",
-    "count": "75"
-  },
-
-
-{
-    "company": "Facebook, Inc",
-    "count": "74"
+    "company": "Bill and Melinda Gates Foundation",
+    "count": "20"
   },
 
 {
@@ -327,12 +40,207 @@
   },
 
 {
-    "company": "Dell Inc",
-    "count": "71"
+    "company": "Boston Consulting Group",
+    "count": "123"
+  },
+
+{
+    "company": "Capital One",
+    "count": "135"
+  },
+
+{
+    "company": "Cisco Systems",
+    "count": "148"
+  },
+
+{
+    "company": "Citigroup",
+    "count": "105"
+  },
+
+{
+    "company": "City Year",
+    "count": "6"
+  },
+
+{
+    "company": "Deloitte",
+    "count": "409"
+  },
+
+{
+    "company": "Deutsche Bank",
+    "count": "107"
+  },
+
+{
+    "company": "Duke Health",
+    "count": "1497"
+  },
+
+{
+    "company": "Eli Lilly & Company",
+    "count": "75"
+  },
+
+{
+    "company": "Environmental Protection Agency",
+    "count": "81"
+  },
+
+{
+    "company": "Facebook",
+    "count": "74"
+  },
+
+
+
+{
+    "company": "General Electric Company",
+    "count": "128"
+  },
+
+{
+    "company": "GlaxoSmithKline",
+    "count": "104"
+  },
+
+{
+    "company": "Goldman Sachs & Company",
+    "count": "197"
+  },
+
+{
+    "company": "Google",
+    "count": "319"
+  },
+
+{
+    "company": "Hewlett-Packard Company",
+    "count": "79"
+  },
+
+{
+    "company": "IBM Corporation",
+    "count": "666"
+  },
+
+{
+    "company": "Intel Corporation",
+    "count": "101"
+  },
+
+{
+    "company": "Johnson & Johnson",
+    "count": "129"
+  },
+
+{
+    "company": "Jones Day",
+    "count": "95"
+  },
+
+{
+    "company": "JPMorgan Chase & Co.",
+    "count": "160"
+  },
+
+{
+    "company": "Kaiser Permanente",
+    "count": "134"
+  },
+
+{
+    "company": "Latham & Watkins",
+    "count": "90"
+  },
+
+{
+    "company": "Lockheed Martin Corporation",
+    "count": "79"
+  },
+
+{
+    "company": "McKinsey & Company",
+    "count": "234"
+  },
+
+{
+    "company": "Medical/Law Private Practice",
+    "count": "808"
+  },
+
+{
+    "company": "Microsoft",
+    "count": "314"
+  },
+
+{
+    "company": "Morgan Stanley & Co.",
+    "count": "213"
+  },
+
+{
+    "company": "Nature Conservancy",
+    "count": "54"
+  },
+
+{
+    "company": "Oracle Corporation",
+    "count": "112"
+  },
+
+{
+    "company": "Pfizer",
+    "count": "95"
+  },
+
+{
+    "company": "PricewaterhouseCoopers",
+    "count": "101"
   },
 
 {
     "company": "Proctor & Gamble Company",
     "count": "64"
+  },
+
+{
+    "company": "Self-Employed",
+    "count": "1088"
+  },
+
+
+{
+    "company": "Simpson Thacher & Bartlett LLP",
+    "count": "83"
+  },
+
+{
+    "company": "Teach for America",
+    "count": "20"
+  },
+
+
+{
+    "company": "United Methodist Church",
+    "count": "123"
+  },
+
+{
+    "company": "U.S. Department of Justice",
+    "count": "75"
+  },
+
+{
+    "company": "U.S. Department of State",
+    "count": "83"
+  },
+
+{
+    "company": "Wells Fargo",
+    "count": "215"
   }
+
 ]
