@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="src/css/student_networking.css" type="text/css">
   <link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,800|Roboto+Slab:300,400,700" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="https://alumni.duke.edu/sites/all/themes/duke/favicon.ico">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
           <h1>Connect with Alumni</h1>
           <h2>Find a Blue Devil who can help you take your next step.</h2>
           <div id="main-image">
-            <img class="blue-devil" src="src/images/BlueDevil-Cutout.png" />
+            <img class="blue-devil" src="src/images/BlueDevil-Cutout.png" alt="Duke Blue Devil wearing a cap with #1 on his jersey"/>
           </div>
           <div class="button-container">
             <a href="https://alumni.duke.edu/discover/people" class="clearfix"><button class="search-now">Begin your<br>search now</button></a>
@@ -42,7 +43,7 @@
       <section class="tile-wrapper-square">
 
         <section id="chapel" class="tile small" style="background: #B5B5B5;">
-        <img src="src/images/Chapel.png"/>
+        <img src="src/images/Chapel.png" alt="black and white image of the Duke Chapel"/>
         </section>
 
 
@@ -61,7 +62,7 @@
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums in the <strong>{{selectedItem.industry}}</strong> industry. Find them on the Network!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums in the {{selectedItem.industry}} industry. <strong>Find them on the Network!</strong></div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -84,7 +85,7 @@
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums who majored in <strong>{{selectedItem.major}}</strong>. Find them on the Network and ask!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums who majored in {{selectedItem.major}}. <strong>Find them on the Network and ask!</strong></div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -113,7 +114,7 @@
 
             <div class="video-img">
               <h1>Need Advice?</h1>
-              <img class="display-video expand-hide" src="src/images/video_ss_overlay.png" />
+              <img class="display-video expand-hide" src="src/images/video_ss_overlay.png" alt="screenshot of a view of the advice YouTube video" />
               <div class="video expand-show">
               <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/oiyTKK979Mc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
@@ -137,7 +138,7 @@
               <li>
                 <div class="tip-item clearfix">
                   <div class="gif-container">
-                    <img src='src/images/shane.gif'/>
+                    <img src='src/images/shane.gif' alt="Shane using his hands to explain tips"/>
                   </div>
                   <div class="copy">
                   <h3>Tip #1</h3>
@@ -158,7 +159,7 @@
               <li>
                 <div class="tip-item clearfix">
                   <div class="gif-container wide-gif">
-                    <img src='src/images/image001.gif'/>
+                    <img src='src/images/image001.gif' alt="man speaking in front of K-ville with students behind K-ville sign waving their hands"/>
                   </div>
                   <div class="copy">
                   <h3>Tip #2</h3>
@@ -180,7 +181,7 @@
               <li>
                 <div class="tip-item clearfix">
                   <div class="gif-container">
-                    <img src='src/images/3_slow.gif'/>
+                    <img src='src/images/3_slow.gif' alt="woman in lab coat"/>
                   </div>
                   <div class="copy">
                   <h3>Tip #3</h3>
@@ -201,7 +202,7 @@
               <li>
               <div class="tip-item clearfix">
                 <div class="gif-container">
-                  <img src='src/images/dave_slow.gif'/>
+                  <img id="dave" src='src/images/dave_slow.gif' alt="Dave talking using his hands"/>
                 </div>
                 <div class="copy">
                 <h3>Tip #4</h3>
@@ -241,7 +242,7 @@
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums living in <strong>{{selectedItem.city}}.</strong> Find them on the Network!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums living in {{selectedItem.city}}. <strong>Find them on the Network!</strong></div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>
@@ -270,7 +271,7 @@
             <div class="video-img">
               <h1>How to Network</h1>
 
-              <img class="display-video expand-hide" src="src/images/network_game_video.png" />
+              <img class="display-video expand-hide" src="src/images/network_game_video.png" alt="screenshot of preview of YouTube networking video"/>
               <div class="video expand-show">
 
               <iframe width="560" height="315" src="https://www.youtube.com/embed/necIBaoB1is?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -287,7 +288,7 @@
               <div class="top-center">
                 <h3>Checklist for getting your first job</h3>
               </div>
-              <img src="src/images/checklist-image.png" />
+              <img src="src/images/checklist-image.png" alt="checklist. 3 dots with 3 lines"/>
             </div>
 
             <div id="div3" class="checklist-container">
@@ -357,7 +358,7 @@
             </div>
             <div class="more-info">
               <div class="left clearfix">
-                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently working at <strong>{{selectedItem.company}}</strong>. Find them on the Network and ask!</div>
+                <div>There are over <strong>{{selectedItem.count}}</strong> alums currently working at {{selectedItem.company}}. <strong>Find them on the Network and ask!</strong></div>
               </div>
               <div class="right clearfix">
                 <a href="https://alumni.duke.edu/discover/people"><button class="sign-in">Sign in</button></a>

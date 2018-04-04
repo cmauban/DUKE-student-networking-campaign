@@ -30,7 +30,7 @@ div.video-img h1 {
 }
 
 .main-info h1 {
-  font-weight: 300;
+  font-weight: 400;
   margin: 20px 20px 5px 20px;
 }
 
@@ -69,8 +69,12 @@ div.video-img h1 {
 div.video-img h1 {
   font-weight: 300;
   margin-bottom: 10px;
+  font-size: 25px;
 }
 
+.expand div.video-img h1 {
+  font-size: 33px;
+}
 
 
 /* keeps the tiles sqaure with screen */
@@ -159,7 +163,7 @@ section.tile-wrapper-sqaure {
 
 .tile-wrapper .tile div.top-center h3 {
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -174,7 +178,7 @@ div.box-centered .top-center h3 {
 }
 
 #chapel img {
-  height: 100%;
+  width: 100%;
 }
 
 /* CHECKLIST */
@@ -312,7 +316,7 @@ div.quote-container {
 }
 
 .tile.small div.info p.quote {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 2;
 }
@@ -484,8 +488,9 @@ select.word-options {
   transform: rotate(1080deg);
 }
 
-.tile-wrapper .tile.expand div.info {
-  padding: 0;
+.tile-wrapper .tile.expand div.info,
+#big-square.tile.expand div.main-info {
+  padding: 0 !important;
 }
 
 .tile.expand div.info p.quote,
@@ -502,7 +507,7 @@ select.word-options {
 }
 
 .tile.expand div.info span.blank span.help {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   line-height: 25px;
   bottom: -25px;
@@ -546,7 +551,8 @@ select.word-options {
   font-weight: 300;
 }
 
-.tile-wrapper .tile div.more-info div {
+.tile-wrapper .tile div.more-info div,
+div.right button.sign-in {
   font-size: 22px;
 }
 
@@ -812,31 +818,13 @@ div.gif-container.wide-gif img {
 
 
 
-/* MOBILE */
-@media only screen and (max-width: 480px) {
-
-  .tile.small div.info p.quote {
-    font-size: 16px;
-  }
 
 
-}
 
 
-@media only screen and (max-width: 768px) {
-
-  .tile-wrapper {
-    width: 100%;
-  }
-
-  .main-info .button-container {
-    margin-top: 75px !important;
-  }
-
-}
 
 /* IPAD PRO */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px){
 
   .tile.small div.info p.quote {
     line-height: 1.5;
@@ -844,6 +832,8 @@ div.gif-container.wide-gif img {
 
   .tile.expand div.info p.quote {
     line-height: 68px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .tile.small div.info p.quote, #big-square p.quote,
@@ -859,9 +849,9 @@ div.gif-container.wide-gif img {
     height: 250px;
   }
 
-  .list__item,
-    a.general-button {
-      font-size: 10px !important;
+  ul.list .list__item,
+    .checklist-container a.general-button {
+      font-size: 10px;
       margin-bottom: 10px
     }
 
@@ -876,9 +866,14 @@ div.gif-container.wide-gif img {
   }
 
   div.video-img h1 {
-    margin-top: 0;
+    margin-top: 10px;
     font-size: 25px;
   }
+
+  .image-carousel li:nth-child(1) > .dot {
+    margin-left: 46.6%;
+  }
+
 
 }
 
@@ -897,7 +892,8 @@ div.gif-container.wide-gif img {
       font-size: 12px;
     }
 
-    .tile-wrapper .tile div.more-info div {
+    .tile-wrapper .tile div.more-info div,
+    div.right button.sign-in {
       font-size: 20px;
     }
 
@@ -956,5 +952,329 @@ div.gif-container.wide-gif img {
       height: 300px;
     }
 
+
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+
+  .tile-wrapper {
+    width: 100%;
+  }
+
+  .main-info .button-container {
+    margin-top: 75px;
+  }
+
+  #madlib-navy.tile.expand div.info span.blank {
+    width: 202px;
+  }
+
+  ul.list .list__item,
+  .checklist-container a.general-button {
+    font-size: 15px;
+  }
+
+  div.video-img h1 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .image-carousel .dot {
+    top: 270px;
+  }
+
+  div.gif-container.wide-gif img {
+    height: 200px;
+  }
+
+  .image-carousel, div.gif-container img {
+    height: 300px;
+  }
+
+  div.gif-container img#dave {
+    margin-left: -60px;
+  }
+
+  .image-carousel .arrow {
+    line-height: 200px;
+  }
+
+  .checklist-container h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .checklist-container .list {
+    padding: 20px;
+  }
+
+  .tips h3 {
+    margin-top: 0;
+  }
+
+  .tips h2 {
+    font-size: 22px;
+  }
+
+  .image-carousel li:nth-child(1) > .dot {
+    margin-left: 44.6%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+  h1,
+  .expand div.video-img h1 {
+    font-size: 25px;
+  }
+
+  .tips-wrapper h1 {
+    margin-top: 0;
+  }
+
+  .main-info h2 {
+    line-height: inherit;
+  }
+
+  h3,
+  .tile-wrapper .tile div.top-center h3,
+  .checklist-container h3 {
+    font-size: 18px;
+  }
+
+  .checklist-container h3 {
+    margin-bottom: 15px;
+    margin-top: 45px;
+  }
+
+  .tips h2 {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .tile-wrapper .tile.expand div.close {
+    right: 10px;
+    top: 10px;
+  }
+
+  .tile-wrapper .tile div.more-info .left {
+    left: 15px;
+    bottom: 10px;
+  }
+
+  .main-info .button-container {
+    margin-top: 20px;
+  }
+
+  .tile.small.expand div.info span.blank span.help {
+    bottom: -30px;
+    font-size: 13px;
+  }
+
+    #big-square span.blank span.help {
+      bottom: -42px;
+    }
+
+    #big-square.expand span.blank span.help {
+      bottom: -30px;
+    }
+
+  .main-info .button-container button.search-now {
+    padding: 10px 30px;
+  }
+
+  .tile.small div.info p.quote,
+  div.video-img h1,
+  .main-info .button-container button.search-now {
+    font-size: 15px;
+  }
+
+  .tile.small.expand div.info p.quote,
+  .tile.expand select.word-options {
+    font-size: 20px;
+  }
+
+  .tile-wrapper .tile.small div.info {
+    padding: 10px;
+  }
+
+  .tile.small div.info span.blank {
+    width: 90px;
+    height: 50px;
+  }
+
+  .tile.small div.info span.blank span.help {
+    font-size: 10px;
+    bottom: -27px;
+  }
+
+  .tile.expand div.info span.blank {
+    height: 70px;
+    width: 150px;
+  }
+
+  .tile-wrapper .tile div.more-info .right {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  #big-square p.quote {
+    font-size: 22px;
+    margin: 0;
+    line-height: inherit;
+    padding: 20px;
+  }
+
+  #big-square.expand p.quote {
+    padding: 0 20px 20px 20px;
+    margin-top: 0;
+    line-height: 50px;
+  }
+
+  #madlib-navy.tile.small div.info span.blank {
+    width: 90px;
+  }
+
+  #madlib-navy.tile.expand div.info span.blank {
+    width: 150px;
+  }
+
+  .tile-wrapper .tile div.more-info div,
+  div.right button.sign-in {
+    font-size: 15px;
+  }
+
+  .tile.expand div.info p.quote {
+    line-height: 40px;
+    padding: 15px;
+  }
+
+  .tile-wrapper .tile div.more-info .left {
+    width: 50%;
+  }
+
+  div.video-img h1 {
+    margin-top: 0;
+  }
+
+  .image-carousel {
+    height: 400px;
+  }
+
+  .image-carousel .dot {
+    top: 380px;
+  }
+
+  .tips-wrapper {
+    padding: 20px;
+  }
+
+  .image-carousel .arrow {
+    line-height: 100px;
+  }
+
+  div.gif-container {
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  div.gif-container.wide-gif {
+    margin-right: 0;
+  }
+
+  div.gif-container img#dave {
+    margin-left: 0;
+  }
+
+  div.gif-container img,
+  div.gif-container.wide-gif img {
+    height: 150px;
+  }
+
+  .image-carousel li:nth-child(1) > .dot {
+    margin-left: 40.6%;
+  }
+
+  div.info.centered img {
+    width: 40%;
+  }
+
+  section#checklist.expand {
+    height: auto !important;
+    z-index: 999999 !important;
+  }
+
+  .checklist-container,
+  .checklist-container .list {
+    padding: 10px;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  .tile-wrapper .tile.small div.info {
+    padding: 5px;
+  }
+
+  .tile.expand div.info p.quote {
+    line-height: 30px;
+  }
+
+  .tile.expand select.word-options {
+    margin-top: 5px;
+  }
+
+  svg.play-animation {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .tile.small.expand div.info p.quote, .tile.expand select.word-options {
+    font-size: 18px;
+  }
+
+  .tile.expand div.info span.blank {
+    width: 115px;
+    height: 62px;
+  }
+
+  .image-carousel li:nth-child(1) > .dot {
+    margin-left: 36.6%;
+  }
+
+  .tile-wrapper #big-square .main-info {
+    padding: 0;
+  }
+
+  #big-square span.blank {
+    width: 150px;
+    height: 60px;
+  }
+
+  #big-square span.blank span.help {
+    bottom: -30px;
+  }
+
+  #big-square.expand span.blank span.help {
+    bottom: -20px;
+  }
+
+  .tile-wrapper .tile div.more-info div, div.right button.sign-in {
+    font-size: 13px;
+  }
 
 }

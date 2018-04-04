@@ -17,7 +17,7 @@ $(function () {
        })
 
         $('.close').on('click', function(){
-          $('.tile.expand').removeClass('expand');
+          $(this).closest('.tile.expand').removeClass('expand');
         });
 
 
