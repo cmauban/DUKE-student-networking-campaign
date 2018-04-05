@@ -12,6 +12,11 @@ header .sign-in-button {
   float: right;
 }
 
+header button.sign-in {
+  border: 2px solid #fff;
+  margin-top: 2px;
+}
+
 .tile-wrapper {
   width: 50%;
   float: left;
@@ -1067,7 +1072,6 @@ div.gif-container.wide-gif img {
     font-size: 15px;
     padding: 3px 20px;
     margin-top: 5px;
-    border: 2px solid #fff;
   }
 
   h1,
@@ -1202,7 +1206,7 @@ div.gif-container.wide-gif img {
 
   .tile-wrapper .tile div.more-info div,
   div.right button.sign-in {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .tile.expand div.info p.quote {
@@ -1344,7 +1348,12 @@ div.gif-container.wide-gif img {
   }
 
   .tile-wrapper .tile div.more-info div, div.right button.sign-in {
-    font-size: 13px;
+    font-size: 14px;
+  }
+
+  /* fix for more info to show on iphone 5/se */
+  .tile-wrapper .tile.expand div.more-info {
+    margin-left: -320px;
   }
 
 }
