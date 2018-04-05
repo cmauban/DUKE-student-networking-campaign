@@ -69,7 +69,7 @@ var printDivCSS = new String ('<link href="../css/student_networking.css" rel="s
 
 //to go top of checklist in mobile
 if ($(window).width() < 481) {
-  $("#checklist").click(function() {
+  $("#checklist").click(function(e) {
       $('html,body').animate({
           scrollTop: $(".checklist-container").offset().top});
   });

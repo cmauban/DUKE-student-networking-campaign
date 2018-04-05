@@ -1,6 +1,11 @@
 header {
   background: #363636;
   height: 50px;
+  padding: 5px 0;
+}
+
+header img.logo {
+  margin-left: 20px;
 }
 
 header .sign-in-button {
@@ -600,7 +605,7 @@ button.sign-in {
   padding: 3px 25px;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
-  margin: 5px;
+  margin-right: 5px;
 }
 
 button.sign-in:hover {
@@ -1058,6 +1063,13 @@ div.gif-container.wide-gif img {
 
 @media only screen and (max-width: 480px) {
 
+  header button.sign-in {
+    font-size: 15px;
+    padding: 3px 20px;
+    margin-top: 5px;
+    border: 2px solid #fff;
+  }
+
   h1,
   .expand div.video-img h1 {
     font-size: 25px;
@@ -1277,6 +1289,11 @@ div.gif-container.wide-gif img {
 }
 
 @media only screen and (max-width: 320px) {
+
+  header img.logo {
+    width: 130px;
+    margin-top: 8px;
+  }
 
   .tile-wrapper .tile.small div.info {
     padding: 5px;
