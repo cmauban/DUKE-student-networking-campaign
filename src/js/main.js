@@ -32,25 +32,21 @@ $(function () {
       $http.get('api/company.json')
         .then(function(response){
           $rootScope.items = response.data;
-          console.log(response.data);
         });
 
         $http.get('api/industry.json')
           .then(function(response){
             $rootScope.industitems = response.data;
-            console.log(response.data);
           });
 
       $http.get('api/city.json')
         .then(function(response){
           $rootScope.cityitems = response.data;
-          console.log(response.data);
         });
 
         $http.get('api/major.json')
           .then(function(response){
             $rootScope.majoritems = response.data;
-            console.log(response.data);
           });
 
     }); // end countController
@@ -70,3 +66,11 @@ var printDivCSS = new String ('<link href="../css/student_networking.css" rel="s
                 window.frames["print_frame"].window.focus();
                 window.frames["print_frame"].window.print();
             }
+
+//to go top of checklist in mobile
+if ($(window).width() < 481) {
+  $("#checklist").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".checklist-container").offset().top});
+  });
+}
