@@ -80,6 +80,10 @@ a:hover {
   color: #001a57;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 /* ---------- */
 
 .col-left-40 {

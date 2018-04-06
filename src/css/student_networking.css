@@ -318,6 +318,7 @@ div.info.centered img {
 
 div.quote-container {
   position: relative;
+  width: 100%;
 }
 
 #big-square div.quote-container {
@@ -329,6 +330,7 @@ div.quote-container {
   font-size: 25px;
   font-weight: 500;
   line-height: 2;
+  color: #fff;
 }
 
 .tile.small div.info span.blank,
@@ -408,49 +410,61 @@ select.word-options {
   font-size: 14px;
   text-align: center;
   width: 100%;
+  padding: 0 5px;
+  padding-right: 15%;
   left: 0;
   margin-top: 6px;
   font-family: 'Open Sans', sans-serif;
-  text-indent: 5px;
   cursor: pointer;
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
-  -webkit-appearance: menulist;
-  -moz-appearance: menulist;
-  /* appearance: none; */
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
-/* span.blank:after {
+span.blank:after {
     content: " ";
     width: 0px;
     height: 0px;
     border: medium solid transparent;
     border-top-color: #666;
     border-width: 7px;
-    margin-right: 12px;
     float: right;
     margin-top: -32px;
     pointer-events: none;
-} */
+}
+
+.expand span.blank:after,
+#big-square span.blank:after {
+  margin-top: -40px;
+}
 
 #big-square select.word-options {
   font-size: 22px;
 }
 
-#madlib-teal select.word-options {
+#madlib-teal select.word-options,
+#madlib-teal span.blank:after {
   color: #339999;
+  border-top-color:#339999;
 }
 
-#madlib-green select.word-options {
+#madlib-green select.word-options,
+#madlib-green span.blank:after {
   color: #A1B70D;
+  border-top-color: #A1B70D;
 }
 
-#madlib-navy select.word-options {
+#madlib-navy select.word-options,
+#madlib-navy span.blank:after {
   color: #001A57;
+  border-top-color:#001A57;
 }
 
-#big-square select.word-options {
+#big-square select.word-options,
+#big-square span.blank:after {
   color: #214B85;
+  border-top-color:#214B85;
 }
 
 .tile-wrapper .tile.small div.more-info,
@@ -889,6 +903,10 @@ div.gif-container.wide-gif img {
     bottom: -20px;
   }
 
+  span.blank:after {
+    margin-top: -20px;
+  }
+
   .video iframe {
     width: 95%;
   }
@@ -1006,6 +1024,10 @@ div.gif-container.wide-gif img {
   ul.list .list__item,
   .checklist-container a.general-button {
     font-size: 15px;
+  }
+
+  select.word-options {
+    padding-right: 20%;
   }
 
   .video iframe {
@@ -1158,11 +1180,6 @@ div.gif-container.wide-gif img {
     padding: 0 10px;
   }
 
-  .tile.small.expand div.info span.blank,
-  #big-square.expand span.blank {
-    padding: 0;
-  }
-
   .tile.small div.info span.blank {
     width: 100px;
     height: 50px;
@@ -1181,6 +1198,16 @@ div.gif-container.wide-gif img {
   .tile-wrapper .tile div.more-info .right {
     bottom: 10px;
     right: 10px;
+  }
+
+  span.blank:after,
+  #big-square span.blank:after {
+    margin-top: -10px;
+  }
+
+  .expand span.blank:after,
+  #big-square.expand span.blank:after {
+    margin-top: -20px;
   }
 
   #big-square p.quote {
@@ -1213,10 +1240,6 @@ div.gif-container.wide-gif img {
     line-height: 40px;
     padding: 0;
     margin: 0 15px 15px 15px;
-  }
-
-  .tile-wrapper .tile div.more-info .left {
-    width: 50%;
   }
 
   .tile-wrapper .tile.expand div.more-info {
@@ -1347,8 +1370,20 @@ div.gif-container.wide-gif img {
     bottom: -20px;
   }
 
+  .expand span.blank:after {
+    margin-top: -15px;
+  }
+
+  #big-square.expand span.blank:after {
+    margin-top: -30px;
+  }
+
   .tile-wrapper .tile div.more-info div, div.right button.sign-in {
     font-size: 14px;
+  }
+
+  .tile-wrapper .tile div.more-info .left {
+    width: 55%;
   }
 
 }
