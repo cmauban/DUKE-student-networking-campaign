@@ -1351,9 +1351,11 @@ div.gif-container.wide-gif img {
     font-size: 14px;
   }
 
+}
+
+@media screen and (max-device-width : 320px) {
   /* fix for more info to show on iphone 5/se */
   .tile-wrapper .tile.expand div.more-info {
     margin-left: -320px;
   }
-
 }
