@@ -17,6 +17,36 @@ header button.sign-in {
   margin-top: 2px;
 }
 
+footer {
+  background: #363636;
+  padding: 20px;
+  display: block;
+  min-height: 100px;
+}
+
+footer .left-logo {
+  float: left;
+  width: 50%;
+}
+
+footer .right-social {
+  float: right;
+}
+
+footer div.right-social i {
+  color: #fff;
+  margin-left: 5px;
+}
+
+footer p {
+  margin: 5px 0 0 0;
+  text-align: right;
+}
+
+footer p a {
+  color: #fff;
+}
+
 .tile-wrapper {
   width: 50%;
   float: left;
@@ -124,8 +154,14 @@ section.tile-wrapper-sqaure {
   width: 100%;
 }
 
+footer p a:hover {
+  color: #fff;
+}
+
 .tile-wrapper .tile.small:hover,
-#big-square .main-info:hover {
+#big-square .main-info:hover,
+footer .right-social i:hover,
+footer p a:hover {
   opacity: .5;
 }
 
