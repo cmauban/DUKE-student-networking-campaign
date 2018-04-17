@@ -6,6 +6,10 @@ body {
   margin: 0 auto;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 main.container {

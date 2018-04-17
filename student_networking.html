@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Duke Students</title>
   <link rel="stylesheet" href="src/css/main.css">
   <link rel="stylesheet" href="src/css/student_networking.css" type="text/css">
@@ -55,7 +56,7 @@
             <div class="quote-container">
               <p class="quote">I'm looking for an alum in the
                 <span class="blank">
-                <select class="word-options" ng-model="selectedItem" ng-options="industitem.industry for industitem in industitems">
+                <select class="word-options" ng-model="selectedItem" ng-options="industitem.industry for industitem in industitems" title="dropdown for industry options">
               </select>
                 <span class="help">industry</span>
                 </span>
@@ -79,7 +80,7 @@
             <div class="quote-container">
               <p class="quote">What can I do with a(n)
                 <span class="blank">
-                <select class="word-options" ng-model="selectedItem" ng-options="majoritem.major for majoritem in majoritems">
+                <select class="word-options" ng-model="selectedItem" ng-options="majoritem.major for majoritem in majoritems" title="dropdown for degree options">
               </select>
                 <span class="help">program/major</span>
               </span> degree?
@@ -100,7 +101,7 @@
           <div class="info">
             <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
             <div class='play-button-container'>
-              <a href='#' class='playBut'>
+              <a href='' class='playBut'>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
                 <svg class="play-animation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="187px" height="187px" viewBox="0 0 213.7 213.7"
                   enable-background="new 0 0 213.7 213.7" xml:space="preserve">
@@ -235,7 +236,7 @@
             <div class="quote-container">
               <p class="quote">I need advice on housing in
                 <span class="blank">
-                <select class="word-options" ng-model="selectedItem" ng-options="cityitem.city for cityitem in cityitems">
+                <select class="word-options" ng-model="selectedItem" ng-options="cityitem.city for cityitem in cityitems" title="dropdown for city options">
               </select>
                 <span class="help">city</span>
                 </span>
@@ -257,7 +258,7 @@
           <div class="info">
             <div class="close"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
             <div class='play-button-container'>
-              <a href='#video2' class='playBut'>
+              <a href='' class='playBut'>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
                 <svg class="play-animation" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="187px" height="187px" viewBox="0 0 213.7 213.7"
                   enable-background="new 0 0 213.7 213.7" xml:space="preserve">
@@ -299,7 +300,12 @@
                 <li class="list__item">
                   <span class="list__item-icon fa fa-square-o"></span>
                   <span class="list__item-icon fa fa-check-square hide"></span>
-                  <span class="list__item-text"><strong>Do Your Homework:</strong> Research the companies you have your eye on and find out everything you can about their history, mission, products and work culture.</span>
+                  <span class="list__item-text"><strong>Define what you are looking for:</strong> Write down the skills you like to use, the work environment you prefer and the type of work you'd like to do.</span>
+                </li>
+                <li class="list__item">
+                  <span class="list__item-icon fa fa-square-o"></span>
+                  <span class="list__item-icon fa fa-check-square hide"></span>
+                  <span class="list__item-text"><strong>Do Your Homework:</strong> Research the companies you have your eye on and find out everything you can about their history and mission</span>
                 </li>
                 <li class="list__item">
                   <span class="list__item-icon fa fa-square-o"></span>
@@ -309,30 +315,30 @@
                 <li class="list__item">
                   <span class="list__item-icon fa fa-square-o"></span>
                   <span class="list__item-icon fa fa-check-square hide"></span>
-                  <span class="list__item-text"><strong>Prepare your questions:</strong> Write down a handful of questions related to your research that you can ask alumni insiders.</span>
+                  <span class="list__item-text"><strong>Prepare your questions:</strong> Relate them to the skills, company culture, projects, etc. you identified in the first step.</span>
                 </li>
                 <li class="list__item">
                   <span class="list__item-icon fa fa-square-o"></span>
                   <span class="list__item-icon fa fa-check-square hide"></span>
-                  <span class="list__item-text"><strong>Reach out:</strong> Contact alumni who work at your top companies via the messaging tool at <a href="https://alumni.duke.edu/" target="_blank">alumni.duke.edu</a>. In the message, introduce yourself briefly (noting that you are a Duke student) and ask if the alum would have time to answer a few of your questions about working at the company.</span>
+                  <span class="list__item-text"><strong>Reach out:</strong> Use the messaging tool by logging onto <a href="https://alumni.duke.edu/" target="_blank">alumni.duke.edu</a>. Introduce yourself briefly (noting that you are a Duke student) and ask if the alum would have time to answer a few questions.</span>
                 </li>
                 <li class="list__item">
                   <span class="list__item-icon fa fa-square-o"></span>
                   <span class="list__item-icon fa fa-check-square hide"></span>
-                  <span class="list__item-text"><strong>Learn from alumni:</strong> Don't ask for a job immediately. Instead, try to learn all you can from alumni. Ask about their journey from Duke to the company where they work now. You're trying to build a relationship first. Sometimes the alum you are talking with isn't in a position to help get you hired--but maybe that person can connect you with someone at his or her company that is.</span>
+                  <span class="list__item-text"><strong>Learn from alumni:</strong> Don't ask for a job immediately. Ask about their career journey. You're trying to build a relationship first. Ask: "Based on what you know about me, who else do you think I should talk to?"</span>
                 </li>
                 <li class="list__item">
                   <span class="list__item-icon fa fa-square-o"></span>
                   <span class="list__item-icon fa fa-check-square hide"></span>
-                  <span class="list__item-text"><strong>Send a message of thanks:</strong> Thank the alum for taking time to chat with you and indicate you are interested in learning about jobs as they become available.</span>
+                  <span class="list__item-text"><strong>Send a message of thanks:</strong> Within 24 hours, thank the alum for taking time to chat and indicate you are interested in learning about jobs as they become available.</span>
                 </li>
                 <li class="list__item">
                   <span class="list__item-icon fa fa-square-o"></span>
                   <span class="list__item-icon fa fa-check-square hide"></span>
-                  <span class="list__item-text"><strong>Follow up and don't give up:</strong> Keep up the relationship with alumni who have been helpful to you. Sometimes timing is everything. If you're not making progress immediately, don't give up. Expand your search, let alumni be your guides at other companies and see what happens. The job search takes both patience and determination.</span>
+                  <span class="list__item-text"><strong>Follow up & don't give up:</strong> Keep up the relationship with alumni who have been helpful to you. Sometimes timing is everything. If you're not making progress, expand your search. The job search takes both patience and determination.</span>
                 </li>
               </ul>
-          <a class="general-button" href="https://alumni.duke.edu/sites/default/files/public/Student-Networking-Checklist.pdf" target="_blank">Print this checklist</a>
+          <a class="general-button" href="https://alumni.duke.edu/sites/default/files/public/Student_Networking_Checklist.pdf" target="_blank">Print this checklist</a>
             </div> <!-- END CHECKLIST -->
 
 
@@ -352,7 +358,7 @@
             <div class="quote-container">
               <p class="quote">What's the culture like<br/>at
                 <span class="blank">
-                <select class="word-options" ng-model="selectedItem" ng-options="item.company for item in items">
+                <select class="word-options" ng-model="selectedItem" ng-options="item.company for item in items" title="dropdown for company options">
               </select>
                 <span class="help">company</span>
               </span> ?
@@ -382,15 +388,15 @@
     <div class="right-social">
       <a href="https://www.instagram.com/dukealumni/" target="_blank">
         <i class="fa fa-instagram fa-2x"></i>
-        <span class="element-invisible">Instagram</span>
+        <!-- <span class="element-invisible">Instagram</span> -->
       </a>
       <a href="https://twitter.com/dukealumni" target="_blank">
         <i class="fa fa-twitter-square fa-2x"></i>
-        <span class="element-invisible">Twitter</span>
+        <!-- <span class="element-invisible">Twitter</span> -->
       </a>
       <a href="https://www.facebook.com/dukealumni" target="_blank">
         <i class="fa fa-facebook-square fa-2x"></i>
-        <span class="element-invisible">Facebook</span>
+        <!-- <span class="element-invisible">Facebook</span> -->
       </a>
       <p><a href="mailto:help@daa.duke.edu?subject=Student%20Networking">Questions?</a></p>
     </div>
